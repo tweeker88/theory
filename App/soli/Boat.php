@@ -3,7 +3,7 @@
 namespace App\soli;
 
 
-use App\soli\interfaces\boatInterface;
+use App\soli\Interfaces\boatInterface;
 
 class Boat implements boatInterface
 {

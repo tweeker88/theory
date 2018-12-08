@@ -3,7 +3,7 @@
 namespace App\soli;
 
 
-use App\soli\interfaces\HelicopterInterface;
+use App\soli\Interfaces\HelicopterInterface;
 
 class Helicopter implements HelicopterInterface
 {

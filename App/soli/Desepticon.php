@@ -3,9 +3,9 @@
 namespace App\soli;
 
 
-use App\soli\interfaces\boatInterface;
-use App\soli\interfaces\CarInterface;
-use App\soli\interfaces\HelicopterInterface;
+use App\soli\Interfaces\boatInterface;
+use App\soli\Interfaces\CarInterface;
+use App\soli\Interfaces\HelicopterInterface;
 
 
 class Desepticon implements HelicopterInterface, CarInterface, boatInterface

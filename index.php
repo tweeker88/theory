@@ -34,7 +34,6 @@ $product->run();
 // -------------Interface segregation-------------
 
 echo '<br>-------------Interface segregation-------------<br>';
-$car = new \App\soli\Car();
 $transformer = new \App\soli\Desepticon();
 $transformer->transformToBoat();
 $transformer->transformToCat();

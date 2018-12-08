@@ -2,7 +2,7 @@
 
 namespace App\soli;
 
-use App\soli\interfaces\CarInterface;
+use App\soli\Interfaces\CarInterface;
 
 class Car implements CarInterface
 {
