@@ -5,6 +5,9 @@ ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
+
+echo '<h2 style="color:red">-------------SOLID-------------</h2>';
+
 // -------------The Single Responsibility Principle-------------
 
 echo '<br>-------------The Single Responsibility Principle-------------<br>';
@@ -47,4 +50,24 @@ $food = new \App\solid\Wife();
 $male = new \App\solid\Male($food);
 $male->eat();
 
+
+
+
+echo "<hr>";
+// -------------Patterns-------------
+
+echo '<br><h2 style="color:red;">-------------Patterns-------------</h2><br>';
+
+// -------------Decorator pattern-------------
+
+echo '<br><h2>-------------Decorator pattern-------------</h2><br>';
+
+function displayText(\App\patterns\decorator\InputFormat $inputFormat, string $text)
+{
+    echo $inputFormat->formatText($text);
+}
+
+
+$input = new \App\patterns\decorator\TextInput();
+displayText(new \App\patterns\decorator\TrimTextFilter($input), '<b>Hello</b>');
 
