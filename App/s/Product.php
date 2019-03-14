@@ -14,7 +14,7 @@ class Product
         $this->logger = $logger;
     }
 
-    public function setPrice(int $price) :void
+    public function setPrice(string $price) :void
     {
         try {
             $this->price = $price;

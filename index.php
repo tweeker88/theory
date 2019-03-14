@@ -13,7 +13,7 @@ echo '<h2 style="color:red">-------------SOLID-------------</h2>';
 echo '<br>-------------The Single Responsibility Principle-------------<br>';
 $logger = new \App\s\Logger();
 $product = new \App\s\Product($logger);
-$product->setPrice(10);
+$product->setPrice('10');
 
 
 // -------------The Open Closed Principle-------------
@@ -21,7 +21,7 @@ $product->setPrice(10);
 echo '<br>-------------The Open Closed Principle-------------<br>';
 $logger = new \App\so\LoggerDb();
 $product = new \App\so\Product($logger);
-$product->setPrice(10);
+$product->setPrice('10');
 
 
 // -------------Liskov Substitution Principle-------------
