@@ -1,6 +1,6 @@
 <?php
 
-namespace App\GrokkingAlgorithms\ChapterOne;
+namespace App\GrokkingAlgorithms;
 
 /**
  * Class BinarySearch
