@@ -5,6 +5,9 @@ ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
+
+
+echo '<h2>-----Бинарный поиск-----</h2><br>';
 $binarySearch = new \App\GrokkingAlgorithms\BinarySearch();
 
 echo 'Исходный массив: ';
@@ -20,3 +23,20 @@ echo '<br>Задача 1: Имеется отсортированный спис
 // ОТВЕТ: log128 = 7
 echo '<br>Задача 2: Предположим, размер списка увеличился вдвоем. Как изменится максимальное кол-во проверок<br>';
 // ОТВЕТ: log256 = 8
+
+
+echo '<h2>-----Сортировка выбором-----</h2><br>';
+
+$selectionSort = new \App\GrokkingAlgorithms\SelectionSort();
+
+echo 'Исходный массив: ';
+echo '<pre>';
+var_dump($selectionSort->getArray());
+echo '</pre>';
+
+$array = $selectionSort->sort($selectionSort->getArray());
+
+echo 'Отсортированный массив: ';
+echo '<pre>';
+var_dump($array);
+echo '</pre>';
