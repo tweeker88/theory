@@ -40,3 +40,20 @@ echo 'Отсортированный массив: ';
 echo '<pre>';
 var_dump($array);
 echo '</pre>';
+
+
+echo '<h2>-----Рекурсия-----</h2><br>';
+
+$recursion = new \App\GrokkingAlgorithms\Recursion();
+
+
+$pile = [
+    'box0',
+    'box' => ['box', 'box'],
+    'box1'=>['box', 'box'],
+    'box2'=>['box', 'box', 'key'],
+    'box3'=>['box', 'box'],
+
+];
+
+$recursion->searchKey($pile);
