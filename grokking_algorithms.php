@@ -42,18 +42,50 @@ var_dump($array);
 echo '</pre>';
 
 
-echo '<h2>-----Рекурсия-----</h2><br>';
+//echo '<h2>-----Рекурсия-----</h2><br>';
+//
+//$recursion = new \App\GrokkingAlgorithms\Recursion();
+//
+//
+//$pile = [
+//    'box0',
+//    'box' => ['box', 'box'],
+//    'box1'=>['box', 'box'],
+//    'box2'=>['box', 'box', 'key'],
+//    'box3'=>['box', 'box'],
+//
+//];
+//
+//$recursion->searchKey($pile);
 
-$recursion = new \App\GrokkingAlgorithms\Recursion();
+
+echo '<h2>-----Сумма массива рекурсия-----</h2><br>';
+
+$fastSotringObject = new \App\GrokkingAlgorithms\QuickSort();
 
 
-$pile = [
-    'box0',
-    'box' => ['box', 'box'],
-    'box1'=>['box', 'box'],
-    'box2'=>['box', 'box', 'key'],
-    'box3'=>['box', 'box'],
+$array = [1,2,3,14,5,12];
 
-];
+$summ = $fastSotringObject->sum($array);
 
-$recursion->searchKey($pile);
+echo $summ;
+
+echo '<h2>-----Число элементов массива рекурсия-----</h2><br>';
+
+$count = $fastSotringObject->count($array);
+
+echo $count;
+
+echo '<h2>-----Поиск макс. значения массива рекурсия-----</h2><br>';
+
+$max = $fastSotringObject->searchMax($array);
+
+echo $max;
+
+echo '<h2>-----Быстрая сортировка-----</h2><br>';
+
+$quickArray = $fastSotringObject->sort($array);
+
+echo "<pre>";
+var_dump($quickArray);
+echo "</pre>";
