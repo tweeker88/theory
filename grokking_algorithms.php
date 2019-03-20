@@ -6,7 +6,6 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 
-
 echo '<h2>-----Бинарный поиск-----</h2><br>';
 $binarySearch = new \App\GrokkingAlgorithms\BinarySearch();
 
@@ -64,7 +63,7 @@ echo '<h2>-----Сумма массива рекурсия-----</h2><br>';
 $fastSotringObject = new \App\GrokkingAlgorithms\QuickSort();
 
 
-$array = [1,2,3,14,5,12];
+$array = [1, 2, 3, 14, 5, 12];
 
 $summ = $fastSotringObject->sum($array);
 
@@ -89,3 +88,12 @@ $quickArray = $fastSotringObject->sort($array);
 echo "<pre>";
 var_dump($quickArray);
 echo "</pre>";
+
+
+echo '<h2>-----Графы-----</h2><br>';
+
+$graphs = new \App\GrokkingAlgorithms\Graphs();
+
+$mango = $graphs->searchSeller();
+
+var_dump($mango);
