@@ -97,3 +97,12 @@ $graphs = new \App\GrokkingAlgorithms\Graphs();
 $mango = $graphs->searchSeller();
 
 var_dump($mango);
+
+
+echo '<h2>-----Алгоритм Дейкстры-----</h2><br>';
+
+$dijkstras = new \App\GrokkingAlgorithms\Dijkstras();
+
+$nodes = $dijkstras->searchWay();
+
+var_dump($nodes);
