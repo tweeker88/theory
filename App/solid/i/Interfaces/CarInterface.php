@@ -1,6 +1,6 @@
 <?php
 
-namespace App\soli\interfaces;
+namespace App\solid\i\interfaces;
 
 Interface CarInterface
 {

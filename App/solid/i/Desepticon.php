@@ -1,11 +1,11 @@
 <?php
 
-namespace App\soli;
+namespace App\solid\i;
 
 
-use App\soli\Interfaces\boatInterface;
-use App\soli\Interfaces\CarInterface;
-use App\soli\Interfaces\HelicopterInterface;
+use App\solid\i\Interfaces\boatInterface;
+use App\solid\i\Interfaces\CarInterface;
+use App\solid\i\Interfaces\HelicopterInterface;
 
 
 class Desepticon implements HelicopterInterface, CarInterface, boatInterface

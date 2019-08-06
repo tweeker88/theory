@@ -1,9 +1,9 @@
 <?php
 
-namespace App\soli;
+namespace App\solid\i;
 
 
-use App\soli\Interfaces\boatInterface;
+use App\solid\i\Interfaces\boatInterface;
 
 class Boat implements boatInterface
 {

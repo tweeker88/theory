@@ -1,9 +1,7 @@
 <?php
 
 
-namespace App\so;
-
-use App\so\Interfaces\LoggerInterface;
+namespace App\solid\s;
 
 class Product
 {
@@ -11,7 +9,7 @@ class Product
 
     public $price;
 
-    public function __construct(LoggerInterface $logger)
+    public function __construct(Logger $logger)
     {
         $this->logger = $logger;
     }
@@ -24,7 +22,7 @@ class Product
             echo 'Цена продукта: ' . $price;
 
         } catch (\Exception $e) {
-            $this->logger->setLog($e->getMessage());
+            $this->logger->log(' Код ошибки: 103');
         }
     }
 }

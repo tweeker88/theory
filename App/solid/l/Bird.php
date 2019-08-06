@@ -1,6 +1,6 @@
 <?php
 
-namespace App\sol;
+namespace App\solid\l;
 
 class Bird
 {

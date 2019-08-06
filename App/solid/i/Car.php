@@ -1,8 +1,8 @@
 <?php
 
-namespace App\soli;
+namespace App\solid\i;
 
-use App\soli\Interfaces\CarInterface;
+use App\solid\i\Interfaces\CarInterface;
 
 class Car implements CarInterface
 {

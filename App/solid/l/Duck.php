@@ -6,7 +6,7 @@
  * Time: 13:59
  */
 
-namespace App\sol;
+namespace App\solid\l;
 
 
 class Duck extends Bird

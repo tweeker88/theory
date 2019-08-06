@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: mason
- * Date: 08.12.18
- * Time: 13:59
- */
 
-namespace App\sol;
-
+namespace App\solid\l;
 
 class Penguin extends Bird
 {

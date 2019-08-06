@@ -1,9 +1,9 @@
 <?php
 
-namespace App\soli;
+namespace App\solid\i;
 
 
-use App\soli\Interfaces\HelicopterInterface;
+use App\solid\i\Interfaces\HelicopterInterface;
 
 class Helicopter implements HelicopterInterface
 {

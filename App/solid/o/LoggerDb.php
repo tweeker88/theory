@@ -1,8 +1,8 @@
 <?php
 
-namespace App\so;
+namespace App\solid\o;
 
-use App\so\Interfaces\LoggerInterface;
+use App\solid\o\Interfaces\LoggerInterface;
 
 class LoggerDb implements LoggerInterface
 {
@@ -12,7 +12,7 @@ class LoggerDb implements LoggerInterface
         $this->writeToDb($message);
     }
 
-    public function write(string $message) :void
+    public function writeToDb(string $message) :void
     {
         echo 'Идет запись в БД ' . $message;
     }

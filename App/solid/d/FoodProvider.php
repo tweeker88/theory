@@ -1,6 +1,6 @@
 <?php
 
-namespace App\solid;
+namespace App\solid\d;
 
 
 interface FoodProvider

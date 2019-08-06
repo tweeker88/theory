@@ -1,6 +1,6 @@
 <?php
 
-namespace App\soli\Interfaces;
+namespace App\solid\i\Interfaces;
 
 interface HelicopterInterface
 {
